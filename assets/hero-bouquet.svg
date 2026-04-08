@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrated bouquet of pink and peach flowers</title>
+  <desc id="desc">A stylized floral arrangement with blush roses and greenery for the Fleurs-de-Lea homepage.</desc>
+  <rect width="640" height="480" rx="32" fill="#fff3ee"/>
+  <circle cx="180" cy="170" r="74" fill="#f0b6c3"/>
+  <circle cx="255" cy="130" r="62" fill="#f7d8a8"/>
+  <circle cx="330" cy="190" r="78" fill="#d987a1"/>
+  <circle cx="410" cy="145" r="55" fill="#f3c8b8"/>
+  <circle cx="470" cy="220" r="66" fill="#e8a6b4"/>
+  <path d="M205 255c35 56 72 107 115 156" stroke="#5a8a5e" stroke-width="14" stroke-linecap="round"/>
+  <path d="M320 245c8 55 20 109 36 164" stroke="#5a8a5e" stroke-width="14" stroke-linecap="round"/>
+  <path d="M385 255c-20 53-42 106-66 157" stroke="#5a8a5e" stroke-width="14" stroke-linecap="round"/>
+  <path d="M230 345c48 22 111 28 167 13l38 96H196l34-109z" fill="#9c3d5a" opacity="0.92"/>
+</svg>

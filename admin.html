@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fleurs-de-Lea Admin Panel</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/admin.css" />
+    <script defer src="assets/content.js"></script>
+    <script defer src="assets/admin.js"></script>
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <section id="login-view" class="admin-card">
+        <span class="eyebrow">Admin login</span>
+        <h1>Manage site content and images</h1>
+        <p class="lead">This panel lets the admin update key homepage and wedding content, contact info, and hero images directly from the browser.</p>
+        <form id="login-form" class="admin-form">
+          <label>
+            Username
+            <input type="text" name="username" placeholder="admin" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="••••••••" required />
+          </label>
+          <button type="submit">Log in</button>
+          <p class="admin-note">Demo credentials: <strong>admin</strong> / <strong>fleurs2026</strong></p>
+          <p class="admin-note">Note: this is a static-site admin panel using browser storage. For true secure multi-user editing, connect a real backend later.</p>
+        </form>
+      </section>
+
+      <section id="dashboard-view" class="admin-card hidden">
+        <div class="admin-toolbar">
+          <div>
+            <span class="eyebrow">Content dashboard</span>
+            <h1>Update the site in minutes</h1>
+          </div>
+          <div class="admin-actions">
+            <a class="button secondary" href="index.html" target="_blank" rel="noreferrer">Open site</a>
+            <button type="button" class="button secondary" id="logout-button">Log out</button>
+          </div>
+        </div>
+
+        <form id="content-form" class="admin-form">
+          <div class="admin-grid">
+            <section class="admin-section">
+              <h2>Global contact settings</h2>
+              <label>
+                Phone display
+                <input type="text" name="site.phoneDisplay" />
+              </label>
+              <label>
+                Phone link
+                <input type="text" name="site.phoneHref" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="site.email" />
+              </label>
+              <label>
+                Homepage top bar
+                <input type="text" name="site.homeTopbar" />
+              </label>
+              <label>
+                Wedding top bar
+                <input type="text" name="site.weddingTopbar" />
+              </label>
+            </section>
+
+            <section class="admin-section">
+              <h2>Homepage hero</h2>
+              <label>
+                Hero title
+                <textarea name="home.heroTitle"></textarea>
+              </label>
+              <label>
+                Hero text
+                <textarea name="home.heroLead"></textarea>
+              </label>
+              <label>
+                Primary CTA label
+                <input type="text" name="home.primaryCtaLabel" />
+              </label>
+              <label>
+                Primary CTA link
+                <input type="text" name="home.primaryCtaHref" />
+              </label>
+              <label>
+                Secondary CTA label
+                <input type="text" name="home.secondaryCtaLabel" />
+              </label>
+              <label>
+                Secondary CTA link
+                <input type="text" name="home.secondaryCtaHref" />
+              </label>
+              <label>
+                Homepage hero image URL or data image
+                <input type="text" name="home.heroImage" />
+              </label>
+              <label>
+                Upload homepage hero image
+                <input class="file-input" type="file" accept="image/*" data-image-target="home.heroImage" />
+              </label>
+              <img class="preview-thumb" data-preview="home.heroImage" alt="Homepage hero preview" />
+            </section>
+
+            <section class="admin-section">
+              <h2>Wedding page hero</h2>
+              <label>
+                Wedding title
+                <textarea name="weddings.heroTitle"></textarea>
+              </label>
+              <label>
+                Wedding text
+                <textarea name="weddings.heroLead"></textarea>
+              </label>
+              <label>
+                Primary CTA label
+                <input type="text" name="weddings.primaryCtaLabel" />
+              </label>
+              <label>
+                Primary CTA link
+                <input type="text" name="weddings.primaryCtaHref" />
+              </label>
+              <label>
+                Secondary CTA label
+                <input type="text" name="weddings.secondaryCtaLabel" />
+              </label>
+              <label>
+                Secondary CTA link
+                <input type="text" name="weddings.secondaryCtaHref" />
+              </label>
+              <label>
+                Wedding hero image URL or data image
+                <input type="text" name="weddings.heroImage" />
+              </label>
+              <label>
+                Upload wedding hero image
+                <input class="file-input" type="file" accept="image/*" data-image-target="weddings.heroImage" />
+              </label>
+              <img class="preview-thumb" data-preview="weddings.heroImage" alt="Wedding hero preview" />
+            </section>
+
+            <section class="admin-section">
+              <h2>About & contact images</h2>
+              <label>
+                About title
+                <textarea name="about.heroTitle"></textarea>
+              </label>
+              <label>
+                About lead text
+                <textarea name="about.heroLead"></textarea>
+              </label>
+              <label>
+                About image
+                <input type="text" name="about.image" />
+              </label>
+              <label>
+                Upload about image
+                <input class="file-input" type="file" accept="image/*" data-image-target="about.image" />
+              </label>
+              <img class="preview-thumb" data-preview="about.image" alt="About image preview" />
+              <label>
+                Contact title
+                <textarea name="contact.heroTitle"></textarea>
+              </label>
+              <label>
+                Contact lead text
+                <textarea name="contact.heroLead"></textarea>
+              </label>
+              <label>
+                Contact image
+                <input type="text" name="contact.image" />
+              </label>
+              <label>
+                Upload contact image
+                <input class="file-input" type="file" accept="image/*" data-image-target="contact.image" />
+              </label>
+              <img class="preview-thumb" data-preview="contact.image" alt="Contact image preview" />
+            </section>
+          </div>
+
+          <div class="admin-actions">
+            <button type="submit">Save changes</button>
+            <button type="button" class="button secondary" id="reset-button">Reset to defaults</button>
+            <button type="button" class="button secondary" id="export-button">Export JSON</button>
+            <button type="button" class="button secondary" id="import-button">Import JSON</button>
+            <input id="import-json" type="file" accept="application/json" class="hidden" />
+          </div>
+
+          <div id="admin-status" class="success-message" aria-live="polite"></div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Wedding centerpiece illustration</title>
+  <desc id="desc">An illustrated floral centerpiece in blush and burgundy tones for wedding flowers.</desc>
+  <rect width="640" height="480" rx="32" fill="#fff7f2"/>
+  <ellipse cx="320" cy="390" rx="170" ry="38" fill="#ead9d3"/>
+  <path d="M230 330h180l-20 60H250l-20-60z" fill="#c38a5a"/>
+  <circle cx="220" cy="220" r="58" fill="#e5a8ba"/>
+  <circle cx="290" cy="170" r="64" fill="#f5d5a5"/>
+  <circle cx="350" cy="205" r="68" fill="#b95f79"/>
+  <circle cx="425" cy="185" r="56" fill="#f0c0c6"/>
+  <path d="M220 265l35 70M290 235l8 95M355 270l-22 66M415 240l-35 87" stroke="#5a8a5e" stroke-width="12" stroke-linecap="round"/>
+</svg>

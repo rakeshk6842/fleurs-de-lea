@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Floral class workshop illustration</title>
+  <desc id="desc">A stylized classroom floral arrangement scene representing design workshops in Fairfax.</desc>
+  <rect width="640" height="480" rx="32" fill="#fff4ef"/>
+  <rect x="110" y="120" width="420" height="220" rx="24" fill="#ffffff" stroke="#ead9d3" stroke-width="8"/>
+  <circle cx="220" cy="220" r="52" fill="#f1b9c8"/>
+  <circle cx="300" cy="195" r="44" fill="#f7d9b2"/>
+  <circle cx="370" cy="225" r="58" fill="#d7839c"/>
+  <path d="M220 260l20 48M300 235l0 75M370 280l-24 45" stroke="#5a8a5e" stroke-width="12" stroke-linecap="round"/>
+  <rect x="170" y="340" width="300" height="22" rx="11" fill="#9c3d5a" opacity="0.85"/>
+</svg>
